@@ -17,7 +17,8 @@
             android:id="@+id/theaterTUZ"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/card_margin">
+            android:layout_marginBottom="@dimen/card_margin"
+            android:onClick="CardClick">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -35,7 +36,7 @@
                     android:layout_alignParentLeft="true"
 
                     android:src="@drawable/t_tuz"
-                    android:contentDescription="@string/theatre_tuz_name"
+                    android:contentDescription="@string/theater_tuz_name"
                     android:scaleType="centerCrop"
                     android:cropToPadding="true"
                     android:background="@color/black"
@@ -48,7 +49,7 @@
                     android:layout_toRightOf="@+id/tuz_image"
                     android:layout_marginBottom="@dimen/card_text_marginBottom"
 
-                    android:text="@string/theatre_tuz_name"
+                    android:text="@string/theater_tuz_name"
                     android:textSize="@dimen/card_theater_name_size"
                     android:textColor="@color/font"
                     android:textAlignment="center"
@@ -62,7 +63,7 @@
                     android:layout_toRightOf="@+id/tuz_image"
                     android:layout_below="@+id/tuz_name"
 
-                    android:text="@string/theatre_tuz_address"
+                    android:text="@string/theater_tuz_address"
                     android:textSize="@dimen/card_theater_address_size"
                     android:textColor="@color/font"
                     android:background="@drawable/text_bg"
@@ -76,7 +77,8 @@
             android:id="@+id/theaterDrama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/card_margin">
+            android:layout_marginBottom="@dimen/card_margin"
+            android:onClick="CardClick">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -94,7 +96,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
 
                     android:src="@drawable/t_drama"
-                    android:contentDescription="@string/theatre_drama_name"
+                    android:contentDescription="@string/theater_drama_name"
                     android:scaleType="centerCrop"
                     android:cropToPadding="true"
                     android:background="@color/black"
@@ -109,7 +111,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginBottom="@dimen/card_text_marginBottom"
 
-                    android:text="@string/theatre_drama_name"
+                    android:text="@string/theater_drama_name"
                     android:textSize="@dimen/card_theater_name_size"
                     android:textColor="@color/font"
                     android:textAlignment="center"
@@ -125,7 +127,7 @@
                     app:layout_constraintTop_toBottomOf="@id/drama_name"
                     android:layout_marginTop="@dimen/card_text_marginBottom"
 
-                    android:text="@string/theatre_drama_address"
+                    android:text="@string/theater_drama_address"
                     android:textSize="@dimen/card_theater_address_size"
                     android:textColor="@color/font"
                     android:background="@drawable/text_bg"
@@ -139,7 +141,8 @@
             android:id="@+id/theaterDolls"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/card_margin">
+            android:layout_marginBottom="@dimen/card_margin"
+            android:onClick="CardClick">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -157,7 +160,7 @@
                     android:layout_gravity="center_vertical"
 
                     android:src="@drawable/t_dolls"
-                    android:contentDescription="@string/theatre_dolls_name"
+                    android:contentDescription="@string/theater_dolls_name"
                     android:scaleType="centerCrop"
                     android:cropToPadding="true"
                     android:background="@color/black"
@@ -175,7 +178,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/card_text_marginBottom"
 
-                        android:text="@string/theatre_dolls_name"
+                        android:text="@string/theater_dolls_name"
                         android:textSize="@dimen/card_theater_name_size"
                         android:textColor="@color/font"
                         android:textAlignment="center"
@@ -187,7 +190,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:text="@string/theatre_dolls_address"
+                        android:text="@string/theater_dolls_address"
                         android:textSize="@dimen/card_theater_address_size"
                         android:textColor="@color/font"
                         android:background="@drawable/text_bg"

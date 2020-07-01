@@ -1,13 +1,55 @@
 <resources>
     <string name="app_name">KirovTheaters</string>
 
-    <string name="theatre_tuz_name">Театр на Спасской</string>
-    <string name="theatre_drama_name">Кировский драматический театр</string>
-    <string name="theatre_drama_address">г. Киров, ул. Московская, д. 37</string>
-    <string name="theatre_dolls_name">Кировский театр кукол имени А.Н.Афанасьева</string>
-    <string name="theatre_dolls_address">г. Киров, ул. Спасская, д. 22</string>
-    <string name="theatre_tuz_address">г. Киров, ул. Спасская, д. 17</string>
+    <string name="theater_tuz_name">Театр на Спасской</string>
+    <string name="theater_tuz_address">г. Киров, ул. Спасская, д. 17</string>
+    <string name="theater_tuz_vk" translatable="false">vk.com/theateronthespasskaya</string>
+    <string name="theater_tuz_site" translatable="false">ekvus-kirov.ru</string>
+    <string name="theater_tuz_phone" translatable="false">+7 (8332) 715-720</string>
+
+    <string name="theater_drama_name">Кировский драматический театр</string>
+    <string name="theater_drama_address">г. Киров, ул. Московская, д. 37</string>
+    <string name="theater_drama_vk" translatable="false">vk.com/kirov.dramteatr</string>
+    <string name="theater_drama_site" translatable="false">kirovdramteatr.ru</string>
+    <string name="theater_drama_phone" translatable="false">+7 (8332) 41-32-52</string>
+
+    <string name="theater_dolls_name">Кировский театр кукол имени А.Н.Афанасьева</string>
+    <string name="theater_dolls_address">г. Киров, ул. Спасская, д. 22</string>
+    <string name="theater_dolls_vk" translatable="false">vk.com/teatr_kukol_kirov</string>
+    <string name="theater_dolls_site" translatable="false">kirovkukla.ru</string>
+    <string name="theater_dolls_phone" translatable="false">+7 (8332) 41-14-99</string>
 
     <string name="poster">Афиша</string>
     <string name="troupe">Труппа</string>
+
+    <!--Для корректной работы программы необходимо соблюдать порядок данных о театрах-->
+    <string-array name="theater_names">
+        <item>@string/theater_tuz_name</item>
+        <item>@string/theater_drama_name</item>
+        <item>@string/theater_dolls_name</item>
+    </string-array>"
+
+    <string-array name="theater_address">
+        <item>@string/theater_tuz_address</item>
+        <item>@string/theater_drama_address</item>
+        <item>@string/theater_dolls_address</item>
+    </string-array>
+
+    <string-array name="theater_vk">
+        <item>@string/theater_tuz_vk</item>
+        <item>@string/theater_drama_vk</item>
+        <item>@string/theater_dolls_vk</item>
+    </string-array>
+
+    <string-array name="theater_site">
+        <item>@string/theater_tuz_site</item>
+        <item>@string/theater_drama_site</item>
+        <item>@string/theater_dolls_site</item>
+    </string-array>
+
+    <string-array name="theater_phone">
+        <item>@string/theater_tuz_phone</item>
+        <item>@string/theater_drama_phone</item>
+        <item>@string/theater_dolls_phone</item>
+    </string-array>
 </resources>

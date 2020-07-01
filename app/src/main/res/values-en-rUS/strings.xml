@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">KirovTheaters</string>
 
-    <string name="theatre_tuz_name">Theater on Spasskaya</string>
-    <string name="theatre_tuz_address">Kirov, st. Spasskaya, d. 17</string>
-    <string name="theatre_drama_name">Kirov Drama Theater</string>
-    <string name="theatre_drama_address">Kirov, st. Moskovskaya, d. 37</string>
-    <string name="theatre_dolls_name">Kirov Puppet Theater named after A.N. Afanasyev</string>
-    <string name="theatre_dolls_address">Kirov, st. Spasskaya, d. 22</string>
+    <string name="theater_tuz_name">Theater on Spasskaya</string>
+    <string name="theater_tuz_address">Kirov, st. Spasskaya, d. 17</string>
+    <string name="theater_drama_name">Kirov Drama Theater</string>
+    <string name="theater_drama_address">Kirov, st. Moskovskaya, d. 37</string>
+    <string name="theater_dolls_name">Kirov Puppet Theater named after A.N. Afanasyev</string>
+    <string name="theater_dolls_address">Kirov, st. Spasskaya, d. 22</string>
     <string name="poster">Poster</string>
     <string name="troupe">Trupa</string>
 </resources>
