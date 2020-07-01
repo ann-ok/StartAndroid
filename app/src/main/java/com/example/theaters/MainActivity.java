@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
     public void CardClick(View view) {
         boolean error = false;
 
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
      * Метод возвращает строку - параметр театра из res/values/string.
      * @param param Нужный параметр - значение name для string-array.
      * @param theaterId Id театра - номер строки из string-array.
-     * @return Параметр театра
+     * @return
      */
     public String GetTheaterParamByResources(TheaterParams param, int theaterId) {
         String paramName = param.getName();
