@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_actor_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/actors_card_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:padding="@dimen/card_padding">
+
+        <ImageView
+            android:id="@+id/table_actor_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:layout_marginBottom="@dimen/card_text_marginBottom"
+
+            android:background="@color/black"
+            android:padding="1dp"/>
+
+        <TextView
+            android:id="@+id/table_actor_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="Example"
+            android:textSize="@dimen/card_theater_address_size"
+            android:textColor="@color/font"
+            android:background="@drawable/text_bg"
+            android:padding="@dimen/card_text_padding"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
