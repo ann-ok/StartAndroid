@@ -146,7 +146,8 @@
         <TextView
             android:id="@+id/theater_map_text_view"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/icon_side"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/icon_side"
             android:layout_toRightOf="@id/map_icon"
 
             android:textSize="@dimen/links_size"
@@ -186,7 +187,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/troupe" />
+                    android:text="@string/troupe"
+                    android:onClick="TroupeButtonClick"/>
 
             </LinearLayout>
 
