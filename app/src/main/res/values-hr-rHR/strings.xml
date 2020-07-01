@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KirovTheaters</string>
+    <string name="theatre_tuz_name">Kazalište na Spasskaya</string>
+    <string name="theatre_tuz_address">Kirov, st. Spasskaya, umro 17</string>
+    <string name="theatre_drama_name">Kirovsko dramsko kazalište</string>
+    <string name="theatre_drama_address">Kirov, st. Moskovskaya, d. 37</string>
+    <string name="theatre_dolls_name">Kazalište lutaka Kirov nazvano po A. N. Afanasijevu</string>
+    <string name="theatre_dolls_address">Kirov, st. Spasskaya, d. 22</string>
+    <string name="poster">Poster</string>
+    <string name="troupe">Troupe</string>
+</resources>

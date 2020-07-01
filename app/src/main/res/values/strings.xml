@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">KirovTheaters</string>
+
+    <string name="theatre_tuz_name">Театр на Спасской</string>
+    <string name="theatre_drama_name">Кировский драматический театр</string>
+    <string name="theatre_drama_address">г. Киров, ул. Московская, д. 37</string>
+    <string name="theatre_dolls_name">Кировский театр кукол имени А.Н.Афанасьева</string>
+    <string name="theatre_dolls_address">г. Киров, ул. Спасская, д. 22</string>
+    <string name="theatre_tuz_address">г. Киров, ул. Спасская, д. 17</string>
+
+    <string name="poster">Афиша</string>
+    <string name="troupe">Труппа</string>
 </resources>

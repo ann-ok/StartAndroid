@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_padding">10dp</dimen>
+
+    <!--Main Activity-->
+    <dimen name="card_padding">15dp</dimen>
+    <dimen name="card_margin">10dp</dimen>
+
+    <dimen name="card_image_side">120dp</dimen>
+    <dimen name="card_image_marginRight">20dp</dimen>
+    <dimen name="card_text_marginBottom">10dp</dimen>
+    <dimen name="card_text_padding">5dp</dimen>
+
+    <dimen name="card_theater_name_size">20sp</dimen>
+    <dimen name="card_theater_address_size">16sp</dimen>
+
+    <!--Theater Activity-->
+    <dimen name="image_height">130dp</dimen>
+    <dimen name="icon_side">35dp</dimen>
+
+    <dimen name="theater_name_big_size">35sp</dimen>
+    <dimen name="links_size">18sp</dimen>
+</resources>
