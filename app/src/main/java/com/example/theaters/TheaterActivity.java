@@ -27,7 +27,7 @@ public class TheaterActivity extends AppCompatActivity {
             }
         }
 
-        setTitle("Театр");
+        setTitle(getResources().getString(R.string.theaterActivity_name));
         setContentView(R.layout.activity_theater);
 
         // заполнение Activity полученными данными

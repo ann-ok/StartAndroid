@@ -5,21 +5,28 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.example.theaters.adapter.ActorAdapter;
 import com.example.theaters.models.Actor;
 import com.example.theaters.models.Theater;
+import com.example.theaters.service.JSoupActorService;
+import com.example.theaters.service.JSoupService;
 
+import org.jsoup.nodes.Document;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class ActorsActivity extends AppCompatActivity {
 
     Theater theater;
+    ArrayList<Actor> actors;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -34,7 +41,7 @@ public class ActorsActivity extends AppCompatActivity {
             }
         }
 
-        setTitle("Труппа");
+        setTitle(getResources().getString(R.string.actorsActivity_name));
         setContentView(R.layout.activity_actors);
 
         // вывод доп. информации
@@ -49,10 +56,8 @@ public class ActorsActivity extends AppCompatActivity {
         actors.add(new Actor("Алексей", "https://dev.by/storage/images/17/20/80/15/derived/afe7bcaee6374c4b056d21c08a36a003.jpg"));
 
         // вывод актёров
-        ActorAdapter actorAdapter = new ActorAdapter(actors);
-        RecyclerView actorRecyclerView = findViewById(R.id.actors_recycler_view);
-        actorRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-        actorRecyclerView.setAdapter(actorAdapter);
+        ActorsTask task = new ActorsTask();
+        task.execute();
     }
 
     @Override
@@ -63,6 +68,45 @@ public class ActorsActivity extends AppCompatActivity {
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    class ActorsTask extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            try {
+                // получаем документ
+                Document document = JSoupService.goToHref(theater.getTroupeUrl());
+
+                // получаем актёров (парсим)
+                if (getResources().getString(R.string.theater_tuz_name).equals(theater.getName())) {
+                    actors = JSoupActorService.getTUZTheaterActorList(document, getResources().getString(R.string.theater_tuz_site));
+                } else if (getResources().getString(R.string.theater_drama_name).equals(theater.getName())) {
+                    actors = JSoupActorService.getDramaTheaterActorList(document, getResources().getString(R.string.theater_drama_site));
+                } else if (getResources().getString(R.string.theater_dolls_name).equals(theater.getName())) {
+                    actors = JSoupActorService.getDollsTheaterActorList(document, getResources().getString(R.string.theater_dolls_site));
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+
+            // вывод актёров
+            if (actors.size() == 0) {
+                TextView errorTextView = findViewById(R.id.no_actors);
+                errorTextView.setVisibility(View.VISIBLE);
+            } else {
+                ActorAdapter actorAdapter = new ActorAdapter(actors);
+                RecyclerView actorRecyclerView = findViewById(R.id.actors_recycler_view);
+                actorRecyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+                actorRecyclerView.setAdapter(actorAdapter);
+            }
         }
     }
 }

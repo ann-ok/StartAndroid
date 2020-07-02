@@ -9,14 +9,16 @@ public class Theater implements Serializable {
     private String site;
     private String vk;
     private String phone;
+    private String troupeUrl;
 
-    public Theater(int imageId, String name, String address, String site, String vk, String phone) {
+    public Theater(int imageId, String name, String address, String site, String vk, String phone, String troupeUrl) {
         this.imageId = imageId;
         this.name = name;
         this.address = address;
         this.site = site;
         this.vk = vk;
         this.phone = phone;
+        this.troupeUrl = troupeUrl;
     }
 
     public int getImageId() {
@@ -42,6 +44,8 @@ public class Theater implements Serializable {
     public String getPhone() {
         return phone;
     }
+
+    public String getTroupeUrl() { return troupeUrl; }
 
     public void setImageId(int imageId) {
         this.imageId = imageId;

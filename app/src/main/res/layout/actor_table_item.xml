@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/table_actor_card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/actors_card_margin">
+    android:layout_margin="@dimen/actors_card_margin"
+    app:cardBackgroundColor="@color/text_main_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:orientation="vertical"
         android:background="@drawable/card_bg"
+        android:orientation="vertical"
         android:padding="@dimen/card_padding">
 
         <ImageView
@@ -20,18 +22,18 @@
             android:layout_marginBottom="@dimen/card_text_marginBottom"
 
             android:background="@color/black"
-            android:padding="1dp"/>
+            android:padding="1dp" />
 
         <TextView
             android:id="@+id/table_actor_name_text_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
-            android:text="Example"
-            android:textSize="@dimen/card_theater_address_size"
-            android:textColor="@color/font"
             android:background="@drawable/text_bg"
-            android:padding="@dimen/card_text_padding"/>
+            android:padding="@dimen/card_text_padding"
+            android:text="Example"
+            android:textColor="@color/font"
+            android:textSize="@dimen/card_theater_address_size" />
 
     </LinearLayout>
 

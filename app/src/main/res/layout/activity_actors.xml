@@ -23,8 +23,23 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/actors_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg"
 
         android:padding="@dimen/activity_padding"/>
 
+    <TextView
+        android:id="@+id/no_actors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/actors_notFound"
+        android:textSize="@dimen/card_theater_name_size"
+        android:textColor="@color/font"
+        android:textAlignment="center"
+        android:background="@android:color/transparent"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="15dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"/>
 </LinearLayout>

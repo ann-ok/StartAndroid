@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KirovTheaters</string>
+    <string name="app_name">Kirov Theaters</string>
 
     <string name="theater_tuz_name">Theater on Spasskaya</string>
     <string name="theater_tuz_address">Kirov, st. Spasskaya, d. 17</string>
@@ -9,4 +9,7 @@
     <string name="theater_dolls_address">Kirov, st. Spasskaya, d. 22</string>
     <string name="poster">Poster</string>
     <string name="troupe">Trupa</string>
+    <string name="theaterActivity_name">Theater</string>
+    <string name="actorsActivity_name">Trupa</string>
+    <string name="actors_notFound">We did not find information about the actors.</string>
 </resources>

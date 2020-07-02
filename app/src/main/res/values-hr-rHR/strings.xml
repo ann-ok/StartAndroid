@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">KirovTheaters</string>
+    <string name="app_name">Kirov Kazališta</string>
     <string name="theater_tuz_name">Kazalište na Spasskaya</string>
     <string name="theater_tuz_address">Kirov, st. Spasskaya, umro 17</string>
     <string name="theater_drama_name">Kirovsko dramsko kazalište</string>
@@ -9,4 +9,7 @@
     <string name="theater_dolls_address">Kirov, st. Spasskaya, d. 22</string>
     <string name="poster">Poster</string>
     <string name="troupe">Troupe</string>
+    <string name="theaterActivity_name">Kazalište</string>
+    <string name="actorsActivity_name">Troupe</string>
+    <string name="actors_notFound">Nismo pronašli informacije o glumcima.</string>
 </resources>

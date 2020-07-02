@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
                     GetTheaterParamByResources(TheaterParams.theaterAddress, theaterId),
                     GetTheaterParamByResources(TheaterParams.theaterSite, theaterId),
                     GetTheaterParamByResources(TheaterParams.theaterVk, theaterId),
-                    GetTheaterParamByResources(TheaterParams.theaterPhone, theaterId)
+                    GetTheaterParamByResources(TheaterParams.theaterPhone, theaterId),
+                    GetTheaterParamByResources(TheaterParams.theaterTrupa, theaterId)
             );
 
             // создаем объект для вызова новой Activity
@@ -69,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
         theaterAddress ("theater_address"),
         theaterVk ("theater_vk"),
         theaterSite ("theater_site"),
-        theaterPhone ("theater_phone");
-
+        theaterPhone ("theater_phone"),
+        theaterTrupa ("theater_trupas");
 
         private String arrayName;
 

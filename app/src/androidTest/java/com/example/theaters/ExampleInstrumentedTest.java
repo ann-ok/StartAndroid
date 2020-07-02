@@ -5,8 +5,17 @@ import android.content.Context;
 import androidx.test.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
+import com.example.theaters.models.Actor;
+import com.example.theaters.models.Theater;
+import com.example.theaters.service.JSoupActorService;
+import com.example.theaters.service.JSoupService;
+
+import org.jsoup.nodes.Document;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
@@ -23,5 +32,14 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.example.theaters", appContext.getPackageName());
+    }
+
+    @Test
+    public void getTheaterActorList() throws IOException {
+        Document document = JSoupService.goToHref("https://kirovdramteatr.ru/truppa/");
+        ArrayList<Actor> actors = JSoupActorService.getDramaTheaterActorList(document, "kirovdramteatr.ru");
+
+        assertEquals("Исаева Наталья Николаевна", actors.get(0).getName());
+        assertEquals("Васильева Анна Александровна", actors.get(actors.size() - 1).getName());
     }
 }

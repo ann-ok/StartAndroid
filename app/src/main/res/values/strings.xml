@@ -1,26 +1,36 @@
 <resources>
-    <string name="app_name">KirovTheaters</string>
+    <string name="app_name">Театры Кирова</string>
+    <string name="theaterActivity_name">Театр</string>
+    <string name="actorsActivity_name">Труппа</string>
 
+    <!--Данные для TheaterActivity-->
+    <string name="poster">Афиша</string>
+    <string name="troupe">Труппа</string>
+
+    <!--Данные для ActorsActivity-->
+    <string name="actors_notFound">Мы не нашли информации об актёрах</string>
+
+    <!--Данные о театрах-->
     <string name="theater_tuz_name">Театр на Спасской</string>
     <string name="theater_tuz_address">г. Киров, ул. Спасская, д. 17</string>
     <string name="theater_tuz_vk" translatable="false">vk.com/theateronthespasskaya</string>
     <string name="theater_tuz_site" translatable="false">ekvus-kirov.ru</string>
     <string name="theater_tuz_phone" translatable="false">+7 (8332) 715-720</string>
+    <string name="theater_tuz_trupaURL" translatable="false">https://ekvus-kirov.ru/truppa/</string>
 
     <string name="theater_drama_name">Кировский драматический театр</string>
     <string name="theater_drama_address">г. Киров, ул. Московская, д. 37</string>
     <string name="theater_drama_vk" translatable="false">vk.com/kirov.dramteatr</string>
     <string name="theater_drama_site" translatable="false">kirovdramteatr.ru</string>
     <string name="theater_drama_phone" translatable="false">+7 (8332) 41-32-52</string>
+    <string name="theater_drama_trupaURL" translatable="false">https://kirovdramteatr.ru/truppa/</string>
 
     <string name="theater_dolls_name">Кировский театр кукол имени А.Н.Афанасьева</string>
     <string name="theater_dolls_address">г. Киров, ул. Спасская, д. 22</string>
     <string name="theater_dolls_vk" translatable="false">vk.com/teatr_kukol_kirov</string>
     <string name="theater_dolls_site" translatable="false">kirovkukla.ru</string>
     <string name="theater_dolls_phone" translatable="false">+7 (8332) 41-14-99</string>
-
-    <string name="poster">Афиша</string>
-    <string name="troupe">Труппа</string>
+    <string name="theater_dolls_trupaURL" translatable="false">http://kirovkukla.ru/truppa/</string>
 
     <!--Для корректной работы программы необходимо соблюдать порядок данных о театрах-->
     <string-array name="theater_names">
@@ -51,5 +61,11 @@
         <item>@string/theater_tuz_phone</item>
         <item>@string/theater_drama_phone</item>
         <item>@string/theater_dolls_phone</item>
+    </string-array>
+
+    <string-array name="theater_trupas">
+        <item>@string/theater_tuz_trupaURL</item>
+        <item>@string/theater_drama_trupaURL</item>
+        <item>@string/theater_dolls_trupaURL</item>
     </string-array>
 </resources>
