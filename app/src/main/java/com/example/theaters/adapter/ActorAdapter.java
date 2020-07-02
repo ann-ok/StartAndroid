@@ -59,7 +59,7 @@ public class ActorAdapter extends RecyclerView.Adapter<ActorAdapter.ActorViewHol
             Picasso.with(itemView.getContext())
                     .load(actorPhotoUrl)
                     .fit()
-                    .centerCrop()
+                    .centerInside()
                     .into(image);
 
             image.setVisibility(actorPhotoUrl != null ? View.VISIBLE : View.GONE);

@@ -23,4 +23,6 @@
 
     <!--Actors Activity-->
     <dimen name="actors_card_margin">5dp</dimen>
+
+
 </resources>
