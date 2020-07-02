@@ -19,10 +19,7 @@
             android:id="@+id/table_actor_image_view"
             android:layout_width="match_parent"
             android:layout_height="@dimen/image_height"
-            android:layout_marginBottom="@dimen/card_text_marginBottom"
-
-            android:background="@color/black"
-            android:padding="1dp" />
+            android:layout_marginBottom="@dimen/card_text_marginBottom"/>
 
         <TextView
             android:id="@+id/table_actor_name_text_view"

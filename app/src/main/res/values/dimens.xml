@@ -20,9 +20,9 @@
 
     <dimen name="theater_name_big_size">25sp</dimen>
     <dimen name="links_size">18sp</dimen>
+    <dimen name="btn_margin">4dp</dimen>
 
     <!--Actors Activity-->
     <dimen name="actors_card_margin">5dp</dimen>
-
 
 </resources>

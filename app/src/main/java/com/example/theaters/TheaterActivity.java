@@ -1,19 +1,33 @@
 package com.example.theaters;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.theaters.models.Theater;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+
+import java.io.IOException;
+import java.util.Locale;
 
 public class TheaterActivity extends AppCompatActivity {
 
-    Theater theater;
+    protected Theater theater;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +62,11 @@ public class TheaterActivity extends AppCompatActivity {
 
         TextView map = findViewById(R.id.theater_map_text_view);
         map.setText(theater.getAddress());
+
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+            FragmentTransaction transaction = this.getSupportFragmentManager().beginTransaction();
+            transaction.add(R.id.mapView, new MapFragment(theater)).commit();
+        }
     }
 
     @Override

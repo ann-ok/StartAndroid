@@ -171,40 +171,41 @@
 
         </RelativeLayout>
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapView"
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/poster"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true">
+                    android:layout_weight="1"
+                    android:text="@string/poster"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="@dimen/btn_margin"/>
 
-                    <Button
-                        android:id="@+id/poster"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/poster" />
+                <Button
+                    android:id="@+id/troupe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/troupe"
+                    android:onClick="TroupeButtonClick"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="@dimen/btn_margin"/>
 
-                    <Button
-                        android:id="@+id/troupe"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/troupe"
-                        android:onClick="TroupeButtonClick"/>
+            </LinearLayout>
 
-                </LinearLayout>
+        </RelativeLayout>
 
-            </RelativeLayout>
-
-        </com.google.android.gms.maps.MapView>
 
     </LinearLayout>
 
